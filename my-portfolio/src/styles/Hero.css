@@ -2,9 +2,32 @@
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
   padding: 5rem 8%;
+  position: relative;
+  overflow: hidden;
+
+  background-color: var(--background);
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(11, 16, 24, 1) 0%,
+      rgba(11, 16, 24, 0.95) 25%,
+      rgba(11, 16, 24, 0.65) 45%,
+      rgba(11, 16, 24, 0.15) 75%,
+      rgba(11, 16, 24, 0) 100%
+    ),
+    url("../assets/hero-background.webp");
+
+  background-repeat: no-repeat;
+
+  background-size:
+    100% 100%,
+    auto 100%;
+
+  background-position:
+    center,
+    right center;
 }
 
 .text-container {
@@ -60,16 +83,126 @@
 }
 
 .image-container {
-  width: min(400px, 40vw);
-  aspect-ratio: 1;
+  width: min(460px, 40vw);
+  aspect-ratio: 3 / 4;
   overflow: hidden;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
+  border-radius: 1.5rem;
+  border: 1px solid var(--accent);
   flex-shrink: 0;
+  transform: translateY(-30px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+/* -------------------- */
+/* TABLET */
+/* -------------------- */
+
+@media (max-width: 900px) {
+  #home {
+    min-height: 800px;
+    padding: 4rem 6%;
+    background-position: 65% center;
+  }
+
+  .text-container {
+    max-width: 550px;
+  }
+
+  .text-container h1 {
+    font-size: clamp(3.5rem, 9vw, 5.5rem);
+  }
+
+  .text-container h2 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+  }
+
+  .text-container p {
+    max-width: 500px;
+  }
+}
+
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+@media (max-width: 600px) {
+  #home {
+    min-height: 780px;
+    padding: 5rem 1.5rem 4rem;
+    justify-content: flex-end;
+
+    background-size: auto 100%;
+    background-position: 72% center;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .text-container p:first-child {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+  }
+
+  .text-container h1 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+    line-height: 0.95;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin: 0.8rem 0 1rem;
+  }
+
+  .text-container p:nth-of-type(2) {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .text-container a {
+    margin-right: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* -------------------- */
+/* SMALL PHONES */
+/* -------------------- */
+
+@media (max-width: 400px) {
+  #home {
+    min-height: 720px;
+    padding: 4rem 1.2rem 3rem;
+    background-position: 75% center;
+  }
+
+  .text-container h1 {
+    font-size: 3.2rem;
+  }
+
+  .text-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .text-container p:nth-of-type(2) {
+    font-size: 0.95rem;
+  }
+
+  .text-container a {
+    display: block;
+    width: fit-content;
+  }
 }

@@ -15,7 +15,9 @@ nav {
   text-decoration: none;
 }
 
-ul {
+/* Navigation */
+
+nav ul {
   display: flex;
   align-items: center;
   gap: 3em;
@@ -24,7 +26,12 @@ ul {
   padding: 0;
 }
 
-ul a {
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul a {
   color: var(--text);
   text-decoration: none;
   font-size: 0.95rem;
@@ -32,16 +39,17 @@ ul a {
   transition: color 0.3s ease;
 }
 
-ul a:hover {
+nav ul a:hover {
   color: var(--accent);
 }
 
-nav > a {
+/* Download CV */
+
+nav ul .download-cv {
   padding: 0.7rem 1.4rem;
   background-color: var(--accent);
   color: var(--background);
   border-radius: 999px;
-  text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
   transition:
@@ -49,7 +57,94 @@ nav > a {
     box-shadow 0.3s ease;
 }
 
-nav > a:hover {
+nav ul .download-cv:hover {
+  color: var(--background);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(214, 174, 99, 0.2);
+}
+
+/* Burger button */
+
+.menu-toggle {
+  display: none;
+  width: 32px;
+  height: 24px;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.menu-toggle::before,
+.menu-toggle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
+  transition:
+    transform 0.3s ease,
+    top 0.3s ease,
+    bottom 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menu-toggle::before {
+  top: 5px;
+  box-shadow: 0 7px 0 var(--accent);
+}
+
+.menu-toggle::after {
+  bottom: 5px;
+}
+
+/* Burger → X */
+
+.menu-toggle.active::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.menu-toggle.active::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    padding: 1rem 5%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul.nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    background-color: var(--background);
+    border-top: 1px solid rgba(214, 174, 99, 0.15);
+    z-index: 100;
+  }
+
+  nav ul.nav-links.active {
+    display: flex;
+  }
+
+  nav ul .download-cv {
+    margin-top: 0.5rem;
+  }
 }
