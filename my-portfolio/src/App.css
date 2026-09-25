@@ -1,0 +1,21 @@
+:root {
+  --background: #0D0F10;
+  --surface: #14171A;
+  --text: #F5F1E8;
+  --muted-text: #A9A39A;
+  --accent: #D6AE63;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
