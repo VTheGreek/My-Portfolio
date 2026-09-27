@@ -1,13 +1,21 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGithub,
+  FaGitAlt
+} from "react-icons/fa";
 import "../styles/Skills.css"
 
 function Skills() {
     const skills = [
-        {name: "HTML", level: 5},
-        {name: "CSS", level: 4},
-        {name: "JavaScript", level: 4},
-        {name: "React", level: 3},
-        {name: "Git", level: 2},
-        {name: "HTTP", level: 2}
+        {name: "HTML", icon: FaHtml5},
+        {name: "CSS", icon: FaCss3Alt},
+        {name: "JavaScript", icon: FaJs},
+        {name: "React", icon: FaReact},
+        { name: "GitHub", icon: FaGithub },
+        {name: "Git", icon: FaGitAlt}
     ]
 
     return(
@@ -16,14 +24,10 @@ function Skills() {
 
             <div className="skills">
                 <ul>
-                    {skills.map((skill) => (
-                        <li key={skill.name}>
-                            {skill.name} 
-                            {[...Array(5)].map((_, i) => (
-                              <span key={i}>{skill.level > i ? "★" : "☆"}</span>
-                            ))}
-                        </li>    
-                    ))}
+                    {skills.map((skill) => {
+                        const Icon = skill.icon
+                        return <li key={skill.name}><Icon /> <span>{skill.name}</span></li>
+                    })}
                 </ul>
             </div>
         </section>

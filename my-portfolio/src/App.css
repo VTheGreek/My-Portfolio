@@ -11,6 +11,9 @@
 
   --blue: #27445C;
   --orange: #C96F32;
+
+  --font-display: "Cinzel", serif;
+  --font-body: "Inter", sans-serif;
 }
 
 * {
@@ -25,4 +28,14 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: var(--font-display);
 }
