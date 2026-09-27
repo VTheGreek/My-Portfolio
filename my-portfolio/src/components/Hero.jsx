@@ -1,4 +1,3 @@
-import ProfileImg from "../assets/hero-img-portrait.webp";
 import "../styles/Hero.css";
 
 function Hero() {

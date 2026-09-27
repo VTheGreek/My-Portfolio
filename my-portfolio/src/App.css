@@ -13,7 +13,7 @@
   --orange: #C96F32;
 
   --font-display: "Cinzel", serif;
-  --font-body: "Inter", sans-serif;
+  --font-body: "Manrope", sans-serif;
 }
 
 * {
@@ -28,6 +28,7 @@ body {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
+  font-family: var(--font-body);
 }
 
 h1,
