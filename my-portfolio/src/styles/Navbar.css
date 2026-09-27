@@ -1,11 +1,23 @@
-nav {
+.navbar {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 5%;
-  background-color: var(--background);
+
+  /* Transparent glass effect */
+  background: rgba(11, 16, 24, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
   border-bottom: 1px solid rgba(214, 174, 99, 0.15);
+
+  /* Follow while scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-sizing: border-box;
 }
 
 .logo {
@@ -17,7 +29,7 @@ nav {
 
 /* Navigation */
 
-nav ul {
+.navbar ul {
   display: flex;
   align-items: center;
   gap: 3em;
@@ -26,12 +38,12 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
+.navbar ul li {
   display: flex;
   align-items: center;
 }
 
-nav ul a {
+.navbar ul a {
   color: var(--text);
   text-decoration: none;
   font-size: 0.95rem;
@@ -39,13 +51,13 @@ nav ul a {
   transition: color 0.3s ease;
 }
 
-nav ul a:hover {
+.navbar ul a:hover {
   color: var(--accent);
 }
 
 /* Download CV */
 
-nav ul .download-cv {
+.navbar ul .download-cv {
   padding: 0.7rem 1.4rem;
   background-color: var(--accent);
   color: var(--background);
@@ -57,7 +69,7 @@ nav ul .download-cv {
     box-shadow 0.3s ease;
 }
 
-nav ul .download-cv:hover {
+.navbar ul .download-cv:hover {
   color: var(--background);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(214, 174, 99, 0.2);
@@ -116,8 +128,8 @@ nav ul .download-cv:hover {
 /* Mobile */
 
 @media (max-width: 768px) {
-  nav {
-    position: relative;
+
+  .navbar {
     padding: 1rem 5%;
   }
 
@@ -125,7 +137,7 @@ nav ul .download-cv:hover {
     display: block;
   }
 
-  nav ul.nav-links {
+  .navbar ul.nav-links {
     display: none;
     position: absolute;
     top: 100%;
@@ -135,16 +147,21 @@ nav ul .download-cv:hover {
     align-items: center;
     gap: 1.5rem;
     padding: 2rem 0;
-    background-color: var(--background);
+
+    /* Keep the glass effect on mobile */
+    background: rgba(11, 16, 24, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
     border-top: 1px solid rgba(214, 174, 99, 0.15);
     z-index: 100;
   }
 
-  nav ul.nav-links.active {
+  .navbar ul.nav-links.active {
     display: flex;
   }
 
-  nav ul .download-cv {
+  .navbar ul .download-cv {
     margin-top: 0.5rem;
   }
 }
