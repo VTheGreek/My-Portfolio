@@ -36,6 +36,12 @@ function Navbar() {
         </li>
 
         <li>
+          <a href="#contact" onClick={closeMenu}>
+            Contact
+          </a>
+        </li>
+        
+        <li>
           <a
             href="/Front - End Developer CV.pdf"
             target="_blank"
@@ -46,11 +52,6 @@ function Navbar() {
           </a>
         </li>
 
-        <li>
-          <a href="#contact" onClick={closeMenu}>
-            Contact
-          </a>
-        </li>
 
         <li>
           <a

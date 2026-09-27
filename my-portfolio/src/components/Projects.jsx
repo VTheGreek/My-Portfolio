@@ -21,6 +21,7 @@ function Projects() {
             <img
               src={miramarImage}
               alt="Miramar Seacoast website"
+              loading="lazy"
             />
           </a>
         </div>
@@ -36,6 +37,7 @@ function Projects() {
             <img
               src={financeImage}
               alt="Personal Finance Tracker website"
+              loading="lazy"
             />
           </a>
         </div>

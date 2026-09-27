@@ -7,8 +7,8 @@ function Hero() {
             <p>HI I'M</p>
             <h1>Vasilis</h1>
             <h2>Junior Front-End Developer</h2>
-            <p>I build responsive and user-friendly websites
-                using modern technologies like React, JavaScript and modern CSS
+            <p>I build responsive and user-friendly 
+                websites using modern technologies like HTML, CSS, JavaScript, and React.
             </p>
 
             <a href="#projects">Projects →</a>
