@@ -13,7 +13,7 @@ function Hero() {
 
             <a href="#projects">Projects →</a>
 
-            <a href="/Vasilis-Efthymiou-Junior-Front-Developer-CV.pdf" download>Download CV</a>
+            <a href="/Vasilis-Efthymiou-Junior-Front-End-Developer-CV.pdf" download>Download CV</a>
 
            </div> 
         </section>
