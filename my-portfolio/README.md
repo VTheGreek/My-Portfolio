@@ -1,16 +1,63 @@
-# React + Vite
+# Vasilis Efthymiou — Front-End Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my skills, projects, and experience as a Junior Front-End Developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[vas-efth.dev](https://vas-efth.dev)
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Vite
+- React Icons
+- Formspree
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design for desktop, tablet, and mobile
+- Modern dark-themed interface
+- Responsive navigation with mobile menu
+- Skills section
+- Project showcase with live project links
+- Downloadable CV
+- Contact form powered by Formspree
+- GitHub and LinkedIn links
+- Custom domain
+
+## 📂 Projects
+
+### Miramar Seacoast
+
+A responsive website created for a seaside hospitality business.
+
+**Technologies:**
+
+- React
+- JavaScript
+- CSS
+- React Router
+
+[View Project](https://agent-6ab9448e2c4a38351376e2ed--miramarseacoast.netlify.app/)
+
+### Personal Finance Tracker
+
+A web application for tracking personal financial goals.
+
+**Technologies:**
+
+- React
+- JavaScript
+- CSS
+
+[View Project](https://personal-financial-goal-tracker-app.vercel.app/)
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
