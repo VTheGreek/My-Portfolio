@@ -6,28 +6,45 @@
   position: relative;
   overflow: hidden;
 
-  background-color: var(--background);
+  background:
+    /* Portrait - MUST be first so it appears on top */
+    url("../assets/hero-cutout.webp"),
 
-  background-image:
-    linear-gradient(
-      90deg,
-      rgba(11, 16, 24, 1) 0%,
-      rgba(11, 16, 24, 0.95) 25%,
-      rgba(11, 16, 24, 0.65) 45%,
-      rgba(11, 16, 24, 0.15) 75%,
-      rgba(11, 16, 24, 0) 100%
+    /* Gold glow */
+    radial-gradient(
+      circle at 72% 50%,
+      rgba(217, 154, 61, 0.1),
+      transparent 28%
     ),
-    url("../assets/hero-background.webp");
+
+    /* Blue glow */
+    radial-gradient(
+      circle at 82% 35%,
+      rgba(39, 68, 92, 0.2),
+      transparent 35%
+    ),
+
+    /* Same base background as Projects */
+    linear-gradient(
+      135deg,
+      #0B1018 0%,
+      #101923 50%,
+      #0B1018 100%
+    );
 
   background-repeat: no-repeat;
 
   background-size:
+    auto 100%,
     100% 100%,
-    auto 100%;
+    100% 100%,
+    100% 100%;
 
   background-position:
+    80% center,
     center,
-    right center;
+    center,
+    center;
 }
 
 .text-container {
@@ -108,7 +125,12 @@
   #home {
     min-height: 800px;
     padding: 4rem 6%;
-    background-position: 65% center;
+
+    background-position:
+      center,
+      center,
+      center,
+      65% center;
   }
 
   .text-container {
@@ -128,7 +150,6 @@
   }
 }
 
-
 /* -------------------- */
 /* MOBILE */
 /* -------------------- */
@@ -139,8 +160,17 @@
     padding: 5rem 1.5rem 4rem;
     justify-content: flex-end;
 
-    background-size: auto 100%;
-    background-position: 72% center;
+    background-size:
+      100% 100%,
+      100% 100%,
+      100% 100%,
+      auto 100%;
+
+    background-position:
+      center,
+      center,
+      center,
+      72% center;
   }
 
   .text-container {
@@ -177,7 +207,6 @@
   }
 }
 
-
 /* -------------------- */
 /* SMALL PHONES */
 /* -------------------- */
@@ -186,7 +215,12 @@
   #home {
     min-height: 720px;
     padding: 4rem 1.2rem 3rem;
-    background-position: 75% center;
+
+    background-position:
+      center,
+      center,
+      center,
+      75% center;
   }
 
   .text-container h1 {
