@@ -14,11 +14,11 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">V</div>
+      <a href="#" className="logo">V</a>
 
       <ul className={`nav-links ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="#home" onClick={closeMenu}>
+          <a href="#" onClick={closeMenu}>
             Home
           </a>
         </li>
