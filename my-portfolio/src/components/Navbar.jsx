@@ -43,7 +43,7 @@ function Navbar() {
         
         <li>
           <a
-            href="/Vasilis-Efthymiou-Junior-Front-End-Developer-CV.pdf"
+            href="/Vasilis-Efthymiou-CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
@@ -55,7 +55,7 @@ function Navbar() {
 
         <li>
           <a
-            href="/Vasilis-Efthymiou-Junior-Front-End-Developer-CV.pdf"
+            href="/Vasilis-Efthymiou-CV.pdf"
             className="download-cv"
             onClick={closeMenu}
             download
