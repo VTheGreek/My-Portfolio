@@ -1,5 +1,5 @@
 import miramarImage from "../assets/miramar-project.webp";
-import financeImage from "../assets/personal-financial-goal-tracker-project.webp";
+import psychologistImage from "../assets/drfayetsantila.webp";
 
 import "../styles/Projects.css";
 
@@ -27,16 +27,16 @@ function Projects() {
         </div>
 
         <div className="project">
-          <h3>Personal Finance Tracker</h3>
+          <h3>Psychologist Website</h3>
 
           <a
-            href="https://personal-financial-goal-tracker-app.vercel.app/"
+            href="https://www.drfayetsantila.be/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
-              src={financeImage}
-              alt="Personal Finance Tracker website"
+              src={psychologistImage}
+              alt="Dr. Faye Tsantila"
               loading="lazy"
             />
           </a>
